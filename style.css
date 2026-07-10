@@ -110,14 +110,21 @@ header p { color: var(--text-muted); margin: 0; }
     gap: 15px;           /* Un pequeño espacio entre el 3D y la imagen */
 }
 
-/* Ambos contenedores ocupan el 50% del ancho */
-.viewer-wrapper, .info-wrapper {
-    flex: 1;             /* Hace que ambos tengan el mismo tamaño */
+/* Cambiamos el valor de flex para ajustar las proporciones */
+
+.viewer-wrapper {
+    flex: 3; /* Ocupa 3 partes del espacio */
     height: 100%;
     overflow: hidden;
     border-radius: 12px;
     border: 1px solid var(--border-color);
     background: #f8f9fa;
+}
+
+.info-wrapper {
+    flex: 7; /* Ocupa 7 partes del espacio (el resto) */
+    height: 100%;
+    overflow-y: auto; /* Permite scroll si la reseña es muy larga */
 }
 
 /* Ajuste para el visor 3D */
