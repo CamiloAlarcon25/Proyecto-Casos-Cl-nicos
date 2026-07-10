@@ -1,34 +1,40 @@
-/* Variables para mantener la consistencia en todo el sitio k*/
 :root {
-    --primary-blue: #1a3c5e;     /* Azul profundo: Autoridad/Universitario */
-    --accent-blue: #0056b3;      /* Azul brillante: Interacción */
-    --bg-gray: #f8f9fa;         /* Fondo clínico: Limpieza */
-    --card-bg: #ffffff;         /* Blanco puro: Lectura */
-    --text-color: #343a40;      /* Gris oscuro: Legibilidad */
-    --border-color: #dee2e6;
+    --primary-blue: #38bdf8; /* Azul neón de tu portafolio */
+    --bg-dark: #0a0f14;      /* Fondo de la página */
+    --wrapper-bg: #111a21;   /* Color del recuadro encapsulado */
+    --card-bg: #1e293b;     /* Fondo de las tarjetas dentro del recuadro */
+    --text-main: #e2e8f0;    /* Texto claro */
+    --border-color: #2d3748; /* Borde sutil */
 }
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Tipografía limpia y técnica */
-    background-color: var(--bg-gray);
-    color: var(--text-color);
-    line-height: 1.6;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--bg-dark); /* Fondo total oscuro */
+    color: var(--text-main);
     margin: 0;
+    padding: 20px;
 }
 
-/* Header tipo Institucional */
+/* El recuadro principal que encapsula todo */
+.main-wrapper {
+    background-color: var(--wrapper-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
 header {
-    background-color: var(--primary-blue);
-    color: white;
-    padding: 3rem 2rem;
     text-align: center;
-    border-bottom: 4px solid var(--accent-blue);
+    margin-bottom: 40px;
 }
 
-header h1 { margin: 0; font-size: 2rem; letter-spacing: -0.5px; }
+header h1 { color: var(--primary-blue); font-size: 2.5rem; }
 
-/* Tarjetas (Index) */
-.container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+/* Grid */
+.container { padding: 0; }
 
 .grid {
     display: grid;
@@ -36,89 +42,50 @@ header h1 { margin: 0; font-size: 2rem; letter-spacing: -0.5px; }
     gap: 30px;
 }
 
+/* Tarjetas */
 .card {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 25px;
+    border-radius: 12px;
+    padding: 0;
     transition: all 0.3s ease;
     text-decoration: none;
     color: inherit;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    overflow: hidden;
 }
 
 .card:hover {
-    border-color: var(--accent-blue);
+    border-color: var(--primary-blue);
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.tag {
-    background: #e1e8ed;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: var(--primary-blue);
-}
-
-/* Botón "Volver" (Para las páginas de caso) */
-.btn-back {
-    display: inline-block;
-    margin: 20px;
-    padding: 10px 20px;
-    background-color: var(--primary-blue);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Estilo para la imagen dentro de la tarjeta */
 .card-img {
     width: 100%;
     height: 180px;
-    object-fit: cover; /* Esto hace que la imagen no se deforme */
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 15px;
+    object-fit: cover;
+    display: block;
 }
 
-/* Espaciado para el texto dentro de la tarjeta */
 .card-content {
-    padding: 0 10px 10px 10px;
+    padding: 20px;
 }
 
-/* Diseño del botón estilo "Ver Proyecto" */
+.card-content h3 { margin: 0 0 10px 0; color: #fff; }
+.card-content p { font-size: 0.9rem; color: #94a3b8; }
+
+/* Botón */
 .btn-card {
     display: inline-block;
     margin-top: 15px;
     padding: 8px 20px;
-    border: 1px solid var(--accent-blue);
-    color: var(--accent-blue);
-    border-radius: 4px;
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+    border-radius: 6px;
     font-weight: bold;
-    font-size: 0.9rem;
     transition: 0.3s;
 }
 
-/* Efecto hover del botón */
 .card:hover .btn-card {
-    background-color: var(--accent-blue);
-    color: white;
-}
-
-/* Este es el contenedor que encapsula todo el contenido */
-.main-wrapper {
-    background-color: #111a21; /* El color oscuro de tu portafolio */
-    border: 1px solid #2d3748; /* El borde sutil */
-    border-radius: 16px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 40px auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-/* Ajuste para que los textos dentro se vean bien sobre el fondo oscuro */
-.main-wrapper h1, .main-wrapper h3, .main-wrapper p {
-    color: #e2e8f0; /* Un blanco grisáceo suave que no cansa la vista */
+    background-color: var(--primary-blue);
+    color: #fff;
 }
