@@ -92,6 +92,3 @@ header p { color: var(--text-muted); margin: 0; }
     color: #fff;
 }
 
-body {
-    border: 10px solid red !important;
-}
