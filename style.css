@@ -1,21 +1,22 @@
 :root {
-    --primary-blue: #38bdf8; /* Azul neón de tu portafolio */
-    --bg-dark: #0a0f14;      /* Fondo de la página */
-    --wrapper-bg: #111a21;   /* Color del recuadro encapsulado */
-    --card-bg: #1e293b;     /* Fondo de las tarjetas dentro del recuadro */
-    --text-main: #e2e8f0;    /* Texto claro */
-    --border-color: #2d3748; /* Borde sutil */
+    --primary-blue: #1a3c5e;     /* Azul institucional */
+    --accent-blue: #0056b3;      /* Azul para botones */
+    --bg-page: #eef2f5;         /* Fondo de la página (gris muy suave) */
+    --wrapper-bg: #ffffff;      /* Fondo del recuadro (blanco limpio) */
+    --text-main: #2d3436;       /* Texto casi negro (alta legibilidad) */
+    --text-muted: #636e72;      /* Texto gris para descripciones */
+    --border-color: #dcdde1;    /* Borde suave */
 }
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: var(--bg-dark); /* Fondo total oscuro */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: var(--bg-page);
     color: var(--text-main);
     margin: 0;
     padding: 20px;
 }
 
-/* El recuadro principal que encapsula todo */
+/* El recuadro encapsulado (estilo tarjeta grande) */
 .main-wrapper {
     background-color: var(--wrapper-bg);
     border: 1px solid var(--border-color);
@@ -23,7 +24,7 @@ body {
     padding: 40px;
     max-width: 1200px;
     margin: 0 auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
 header {
@@ -31,11 +32,11 @@ header {
     margin-bottom: 40px;
 }
 
-header h1 { color: var(--primary-blue); font-size: 2.5rem; }
+header h1 { color: var(--primary-blue); font-size: 2.2rem; margin-bottom: 5px; }
+header p { color: var(--text-muted); margin: 0; }
 
 /* Grid */
 .container { padding: 0; }
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -44,7 +45,7 @@ header h1 { color: var(--primary-blue); font-size: 2.5rem; }
 
 /* Tarjetas */
 .card {
-    background: var(--card-bg);
+    background: #ffffff;
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 0;
@@ -55,8 +56,9 @@ header h1 { color: var(--primary-blue); font-size: 2.5rem; }
 }
 
 .card:hover {
-    border-color: var(--primary-blue);
+    border-color: var(--accent-blue);
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .card-img {
@@ -70,22 +72,22 @@ header h1 { color: var(--primary-blue); font-size: 2.5rem; }
     padding: 20px;
 }
 
-.card-content h3 { margin: 0 0 10px 0; color: #fff; }
-.card-content p { font-size: 0.9rem; color: #94a3b8; }
+.card-content h3 { margin: 0 0 10px 0; color: var(--primary-blue); }
+.card-content p { font-size: 0.95rem; color: var(--text-main); line-height: 1.5; }
 
 /* Botón */
 .btn-card {
     display: inline-block;
     margin-top: 15px;
     padding: 8px 20px;
-    border: 1px solid var(--primary-blue);
-    color: var(--primary-blue);
+    border: 1px solid var(--accent-blue);
+    color: var(--accent-blue);
     border-radius: 6px;
     font-weight: bold;
     transition: 0.3s;
 }
 
 .card:hover .btn-card {
-    background-color: var(--primary-blue);
+    background-color: var(--accent-blue);
     color: #fff;
 }
