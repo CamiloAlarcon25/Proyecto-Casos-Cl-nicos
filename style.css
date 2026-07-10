@@ -130,11 +130,9 @@ model-viewer {
 .static-img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Muestra la imagen completa sin recortar */
-    background-color: #ffffff;
+    object-fit: contain; /* ESTO ES LA CLAVE: 'contain' ajusta la imagen sin recortarla */
     display: block;
 }
-
 /* --- FIN DEL CAMBIO --- */
 
 model-viewer {
