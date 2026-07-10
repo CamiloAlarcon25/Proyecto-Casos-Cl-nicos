@@ -2,23 +2,53 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Caso Clínico: ACV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso Clínico: ACV Isquémico</title>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 <body>
+
     <div class="main-wrapper">
         <a href="index.html" class="btn-back">← Volver al Inicio</a>
-        <h1>CASO CLÍNICO: ACV ISQUÉMICO</h1>
-        
+
+        <header>
+            <h1>Caso Clínico: Accidente Cerebrovascular Isquémico</h1>
+            <p>Análisis de caso: Alejandra, 54 años</p>
+        </header>
+
         <div class="viewer-container">
-            <model-viewer src="cerebro.glb" auto-rotate camera-controls></model-viewer>
+            <model-viewer src="cerebro.glb" alt="Modelo 3D del cerebro" auto-rotate camera-controls></model-viewer>
         </div>
 
-        <div class="info-section">
+        <section class="info-section">
             <h2>Historia Clínica</h2>
-            <p>Paciente: Alejandra, 54 años. Hemiparesia izquierda tras ACV isquémico...</p>
-        </div>
+            <p>Alejandra, de 54 años, sufrió un Accidente Cerebrovascular (ACV) Isquémico en el hemisferio derecho hace cuatro meses. Actualmente vive con su esposo e hija y presenta un Rankin Modificado de 3 puntos, ya que requiere ayuda parcial para algunas actividades de la vida diaria, aunque mantiene cierto grado de independencia.</p>
+            
+            <h2>Consecuencias Clínicas</h2>
+            <p>Como consecuencia del ACV, presenta:</p>
+            <ul>
+                <li>Debilidad y disminución de fuerza en el brazo y la pierna izquierda (hemiparesia izquierda).</li>
+                <li>Alteraciones del equilibrio durante la marcha.</li>
+                <li>Lentitud en la ejecución de las actividades.</li>
+                <li>Disminución de la coordinación y precisión de la mano izquierda.</li>
+            </ul>
+
+            <h2>Dificultades en el Desempeño Cotidiano</h2>
+            <p>Estas dificultades han afectado su desempeño en actividades como: vestirse, abotonarse la ropa, cortar alimentos, peinarse, manipular objetos pequeños y preparar sus comidas.</p>
+            
+            <p>Antes del ACV, Alejandra trabajaba como secretaria y disfrutaba realizar tejido y bordado en su tiempo libre. Sin embargo, debido a la pérdida de fuerza y destreza de su mano izquierda, ha dejado de realizar estas actividades, generándole sentimientos de frustración y tristeza. Además, evita salir sola por miedo a sufrir una caída y ha disminuido su participación en reuniones familiares y actividades sociales.</p>
+
+            <h2>Áreas de Ocupación Afectadas</h2>
+            <ul>
+                <li><strong>Actividades Básicas de la Vida Diaria:</strong> Vestuario, alimentación e higiene.</li>
+                <li><strong>Actividades Instrumentales de la Vida Diaria:</strong> Preparación de alimentos y manejo del hogar.</li>
+                <li><strong>Ocio:</strong> Tejido y bordado.</li>
+                <li><strong>Participación Social:</strong> Disminución de la interacción familiar y social.</li>
+                <li><strong>Rol Laboral:</strong> Incapacidad para retomar sus funciones como secretaria.</li>
+            </ul>
+        </section>
     </div>
+
 </body>
 </html>
