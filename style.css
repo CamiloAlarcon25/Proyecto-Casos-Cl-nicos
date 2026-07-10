@@ -113,7 +113,7 @@ header p { color: var(--text-muted); margin: 0; }
 /* Cambiamos el valor de flex para ajustar las proporciones */
 
 .viewer-wrapper {
-    flex: 3; /* Ocupa 3 partes del espacio */
+    flex: 4; /* Ocupa 3 partes del espacio */
     height: 100%;
     overflow: hidden;
     border-radius: 12px;
@@ -122,7 +122,7 @@ header p { color: var(--text-muted); margin: 0; }
 }
 
 .info-wrapper {
-    flex: 7; /* Ocupa 7 partes del espacio (el resto) */
+    flex: 6; /* Ocupa 7 partes del espacio (el resto) */
     height: 100%;
     overflow-y: auto; /* Permite scroll si la reseña es muy larga */
 }
