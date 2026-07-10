@@ -190,3 +190,27 @@ model-viewer {
 .info-section strong {
     color: #222;
 }
+
+/* Nuevo contenedor para dividir la tarjeta por la mitad */
+.content-split {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center; /* Centra el texto verticalmente con respecto a la imagen */
+}
+
+/* 40% para la imagen, 60% para el texto */
+.image-side {
+    flex: 4;
+}
+
+.text-side {
+    flex: 6;
+}
+
+/* Ajuste específico para que la imagen dentro del lado izquierdo no se desborde */
+.image-side img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
