@@ -27,7 +27,7 @@ body {
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
-/* Header e Intro */
+/* Header e Intro1 */
 header { text-align: center; margin-bottom: 40px; }
 header h1 { color: var(--primary-blue); font-size: 2.2rem; margin-bottom: 5px; }
 header p { color: var(--text-muted); margin: 0; }
