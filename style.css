@@ -73,3 +73,36 @@ header h1 { margin: 0; font-size: 2rem; letter-spacing: -0.5px; }
     text-decoration: none;
     border-radius: 5px;
 }
+
+/* Estilo para la imagen dentro de la tarjeta */
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Esto hace que la imagen no se deforme */
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+/* Espaciado para el texto dentro de la tarjeta */
+.card-content {
+    padding: 0 10px 10px 10px;
+}
+
+/* Diseño del botón estilo "Ver Proyecto" */
+.btn-card {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: 1px solid var(--accent-blue);
+    color: var(--accent-blue);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+/* Efecto hover del botón */
+.card:hover .btn-card {
+    background-color: var(--accent-blue);
+    color: white;
+}
