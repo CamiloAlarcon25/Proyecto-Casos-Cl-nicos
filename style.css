@@ -106,3 +106,19 @@ header h1 { margin: 0; font-size: 2rem; letter-spacing: -0.5px; }
     background-color: var(--accent-blue);
     color: white;
 }
+
+/* Este es el contenedor que encapsula todo el contenido */
+.main-wrapper {
+    background-color: #111a21; /* El color oscuro de tu portafolio */
+    border: 1px solid #2d3748; /* El borde sutil */
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Ajuste para que los textos dentro se vean bien sobre el fondo oscuro */
+.main-wrapper h1, .main-wrapper h3, .main-wrapper p {
+    color: #e2e8f0; /* Un blanco grisáceo suave que no cansa la vista */
+}
