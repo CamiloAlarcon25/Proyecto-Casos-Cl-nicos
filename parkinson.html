@@ -17,8 +17,17 @@
             <p>Análisis de caso: Carlos, 68 años</p>
         </header>
 
-        <div class="viewer-container">
-            <model-viewer src="cerebro-draco.glb" alt="Modelo 3D del Parkinson" auto-rotate camera-controls></model-viewer>
+        <!-- AQUI ESTÁ EL CAMBIO: El contenedor split-wrapper divide en dos columnas -->
+        <div class="split-wrapper">
+            <!-- Lado Izquierdo: Modelo 3D -->
+            <div class="viewer-wrapper">
+                <model-viewer src="cerebro-draco.glb" alt="Modelo 3D del Parkinson" auto-rotate camera-controls></model-viewer>
+            </div>
+            
+            <!-- Lado Derecho: Imagen Informativa -->
+            <div class="info-wrapper">
+                <img src="parkinson1.jpg" alt="Información del Parkinson" class="static-img">
+            </div>
         </div>
 
         <section class="info-section">
