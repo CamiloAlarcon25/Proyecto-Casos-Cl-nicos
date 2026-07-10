@@ -1,0 +1,75 @@
+/* Variables para mantener la consistencia en todo el sitio */
+:root {
+    --primary-blue: #1a3c5e;     /* Azul profundo: Autoridad/Universitario */
+    --accent-blue: #0056b3;      /* Azul brillante: Interacción */
+    --bg-gray: #f8f9fa;         /* Fondo clínico: Limpieza */
+    --card-bg: #ffffff;         /* Blanco puro: Lectura */
+    --text-color: #343a40;      /* Gris oscuro: Legibilidad */
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Tipografía limpia y técnica */
+    background-color: var(--bg-gray);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header tipo Institucional */
+header {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-blue);
+}
+
+header h1 { margin: 0; font-size: 2rem; letter-spacing: -0.5px; }
+
+/* Tarjetas (Index) */
+.container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    border-color: var(--accent-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.tag {
+    background: #e1e8ed;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+/* Botón "Volver" (Para las páginas de caso) */
+.btn-back {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
