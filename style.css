@@ -150,3 +150,38 @@ model-viewer {
     padding-bottom: 10px; 
 }
 .info-section p { line-height: 1.8; color: var(--text-main); }
+
+.info-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 6px solid #ccc;
+    padding: 25px;
+    margin-bottom: 25px; /* Separación entre tarjetas */
+}
+
+/* El "Relieve" o contenedor interno de la imagen */
+.image-container {
+    background-color: #f8f9fa; /* Fondo gris suave */
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.info-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Estilos para el texto de la reseña */
+.info-section {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.info-section strong {
+    color: #222;
+}
