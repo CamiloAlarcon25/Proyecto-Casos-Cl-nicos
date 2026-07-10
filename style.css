@@ -91,3 +91,7 @@ header p { color: var(--text-muted); margin: 0; }
     background-color: var(--accent-blue);
     color: #fff;
 }
+
+body {
+    border: 10px solid red !important;
+}
