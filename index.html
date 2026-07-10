@@ -4,60 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma de Casos Clínicos</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f9; margin: 0; padding: 0; }
-        header { background-color: #2c3e50; color: white; text-align: center; padding: 40px 20px; }
-        
-        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
-        
-        /* Grid de tarjetas */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            color: #333;
-            display: block;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        }
-
-        .card h3 { color: #2c3e50; margin-top: 0; }
-        .card p { color: #666; font-size: 0.95rem; }
-        .tag { display: inline-block; padding: 5px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 10px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>Plataforma de Casos Clínicos</h1>
-        <p>Selecciona un caso para comenzar la visualización</p>
+        <p>Centro de Visualización Anatómica y Patológica</p>
     </header>
 
     <div class="container">
         <div class="grid">
+            
             <a href="acv.html" class="card">
-                <span class="tag" style="background:#e6f2ff; color:#004d73;">Neurología Vascular</span>
+                <span class="tag">Neurología Vascular</span>
                 <h3>Caso Clínico 1: ACV</h3>
                 <p>Estudio de caso: Alejandra, 54 años. Hemiparesia izquierda y rehabilitación funcional.</p>
             </a>
 
             <a href="parkinson.html" class="card">
-                <span class="tag" style="background:#f5eef8; color:#6c3483;">Trastornos del Movimiento</span>
+                <span class="tag">Trastornos del Movimiento</span>
                 <h3>Caso Clínico 2: Parkinson</h3>
                 <p>Estudio de caso: Carlos, 68 años. Manifestaciones motoras en Etapa II de Hoehn y Yahr.</p>
             </a>
+
         </div>
     </div>
 
