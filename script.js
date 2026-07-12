@@ -36,3 +36,20 @@ model-viewer {
 }
 
 /* --- FIN DEL CAMBIO --- */
+
+let indiceImagen = 0;
+const imagenes = ['isquemico.png', 'hemorragico.png', 'mixto.png']; // Asegúrate que los nombres coincidan
+
+function cambiarImagen(direccion) {
+    const imgElement = document.getElementById('acv-image');
+    
+    // Calcular el nuevo índice
+    indiceImagen += direccion;
+    
+    // Lógica para que sea cíclico (si llega al final vuelve al inicio)
+    if (indiceImagen >= imagenes.length) indiceImagen = 0;
+    if (indiceImagen < 0) indiceImagen = imagenes.length - 1;
+    
+    // Cambiar la fuente
+    imgElement.src = imagenes[indiceImagen];
+}
