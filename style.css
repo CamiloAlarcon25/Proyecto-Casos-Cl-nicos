@@ -214,3 +214,26 @@ model-viewer {
     height: auto;
     display: block;
 }
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+.nav-btn:hover { background: rgba(0,0,0,0.8); }
