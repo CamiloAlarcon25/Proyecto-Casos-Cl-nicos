@@ -23,18 +23,26 @@
             </div>
 
             <!-- LADO DERECHO: TARJETA CON RELIEVE Y RESEÑA -->
-    <div class="info-wrapper">
-        <div class="info-card">
-    <!-- Contenedor flex para poner Imagen (izquierda) y Texto (derecha) -->
-    <div class="content-split">
-        <div class="image-side">
-            <img src="ACV_Isquemico1.png" alt="Información ACV" class="static-img">
+<!-- Lado Derecho: Tarjeta con selector de imágenes -->
+<div class="info-wrapper">
+    <div class="info-card">
+        <h2 class="card-title">TIPOS DE ACV</h2>
+        
+        <div class="carousel-container">
+            <!-- Botón Izquierda -->
+            <button class="nav-btn prev" onclick="cambiarImagen(-1)">❮</button>
+            
+            <!-- Imagen que cambiará -->
+            <div class="image-container">
+                <img id="acv-image" src="ACV_Isquemico.png" alt="Tipo de ACV" class="static-img">
+            </div>
+            
+            <!-- Botón Derecha -->
+            <button class="nav-btn next" onclick="cambiarImagen(1)">❯</button>
         </div>
+        <p style="text-align:center; font-size: 0.8rem; color: #636e72;">Haz clic en las flechas para ver otros tipos</p>
     </div>
 </div>
-    </div>
-           
-        </div>
 
         <section class="info-section">
             <h2>Historia Clínica</h2>
