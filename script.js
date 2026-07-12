@@ -35,7 +35,7 @@ model-viewer {
     display: block;
 }
 
-/* --- FIN DEL CAMBIO --- */
+/* --- FIN DEL CAMBIO1 --- */
 
 let indiceImagen = 0;
 const imagenes = ['isquemico.png', 'hemorragico.png', 'mixto.png']; // Asegúrate que los nombres coincidan
