@@ -115,3 +115,25 @@ model-viewer { width: 100%; height: 100%; }
 /* Texto informativo */
 .info-section { margin-top: 40px; }
 .info-section h2 { color: var(--primary-blue); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; }
+/* Corrección para que las imágenes no se desborden */
+.static-img {
+    max-width: 100%;      /* La imagen nunca será más ancha que su contenedor */
+    max-height: 200px;    /* Ajusta este valor según el alto que desees */
+    width: auto;          /* Mantiene la proporción original */
+    height: auto;         /* Mantiene la proporción original */
+    object-fit: contain;  /* Asegura que la imagen completa se vea */
+    display: block;
+    margin: 0 auto;       /* Centra la imagen */
+}
+
+/* Asegurar que el contenedor del carrusel también tenga un límite */
+.carousel-container {
+    height: 250px;        /* Altura fija para el contenedor */
+    overflow: hidden;     /* Oculta cualquier cosa que se salga del recuadro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    position: relative;
+}
