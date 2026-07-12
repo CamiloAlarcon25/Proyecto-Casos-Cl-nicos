@@ -38,7 +38,7 @@ model-viewer {
 /* --- FIN DEL CAMBIO1 --- */
 
 let indiceImagen = 0;
-const imagenes = ['isquemico.png', 'hemorragico.png', 'mixto.png']; // Asegúrate que los nombres coincidan
+const imagenes = ['ACV_Isquemico1.png', 'ACV_Hemorragico.png', 'ACV_Mixto.png']; // Asegúrate que los nombres coincidan
 
 function cambiarImagen(direccion) {
     const imgElement = document.getElementById('acv-image');
