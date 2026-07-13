@@ -12,7 +12,7 @@ function cambiarImagen(direccion) {
     imgElement.src = imagenesACV[indiceImagen];
 }
 // --- CARRUSEL PARKINSON ---
-const imagenesParkinson = ['park1.png', 'park2r.png', 'park3.png'];
+const imagenesParkinson = ['park1.png', 'park2.png', 'park3.png'];
 let indiceParkinson = 0;
 
 function cambiarImagenParkinson(direccion) {
