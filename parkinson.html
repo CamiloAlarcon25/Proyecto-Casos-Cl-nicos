@@ -4,64 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caso Clínico: Enfermedad de Parkinson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 <body>
-
     <div class="main-wrapper">
         <a href="index.html" class="btn-back">← Volver al Inicio</a>
-
         <header>
             <h1>Caso Clínico: Enfermedad de Parkinson</h1>
             <p>Análisis de caso: Carlos, 68 años</p>
         </header>
 
-        <!-- AQUI ESTÁ EL CAMBIO: El contenedor split-wrapper divide en dos columnas -->
         <div class="split-wrapper">
-            <!-- Lado Izquierdo: Modelo 3D -->
             <div class="viewer-wrapper">
-                <model-viewer src="cerebro-draco.glb" alt="Modelo 3D del Parkinson" auto-rotate camera-controls></model-viewer>
+                <model-viewer src="cerebro-draco.glb" alt="Modelo 3D" auto-rotate camera-controls></model-viewer>
             </div>
-            
-            <!-- Lado Derecho: Imagen Informativa -->
+
             <div class="info-wrapper">
-                <img src="parkinson1.jpg" alt="Información del Parkinson" class="static-img">
+                <div class="info-card">
+                   <!-- <h2 class="card-title">TIPOS DE ACV</h2> -->
+                    <div class="acv-carousel-container">
+                        <button class="nav-btn prev" onclick="cambiarImagen(-1)">❮</button>
+                        <img id="acv-image" src="ACV_Isquemico1.png" alt="Tipo de ACV" class="acv-img">
+                        <button class="nav-btn next" onclick="cambiarImagen(1)">❯</button>
+                    </div>
+                   <!-- <p style="text-align:center; font-size: 0.8rem; color: #636e72;">Haz clic en las flechas para ver otros tipos</p> -->
+                </div>
             </div>
         </div>
+<section class="info-section">
+    <h2>Descripción del Caso</h2>
+    <p><strong>Carlos, de 68 años</strong>, fue diagnosticado con Enfermedad de Parkinson hace dos años. Actualmente se encuentra en la <strong>Etapa II de la Escala de Hoehn y Yahr</strong>, lo que implica presencia de síntomas en ambos lados del cuerpo, aunque mantiene un grado importante de independencia funcional.</p>
 
-        <section class="info-section">
-            <h2>Historia Clínica</h2>
-            <p>Carlos es un hombre de 68 años diagnosticado con Enfermedad de Parkinson hace dos años. Actualmente se encuentra en la <strong>Etapa II de la Escala de Hoehn y Yahr</strong>, lo que significa que presenta síntomas en ambos lados del cuerpo, pero aún mantiene un grado importante de independencia funcional.</p>
-            
-            <h2>Fisiopatología</h2>
-            <p>La enfermedad se produce por la pérdida progresiva de neuronas productoras de dopamina en la Sustancia Negra del mesencéfalo, generando alteraciones en el funcionamiento de los ganglios basales, estructuras encargadas de iniciar, coordinar y regular los movimientos.</p>
-            
-            <h2>Síntomas Principales</h2>
-            <p>Carlos presenta los siguientes síntomas:</p>
-            <ul>
-                <li>Temblor de reposo en la mano derecha.</li>
-                <li>Rigidez muscular.</li>
-                <li>Bradicinesia (lentitud de movimientos).</li>
-            </ul>
+    <h2>Fisiopatología</h2>
+    <p>La enfermedad se origina por la pérdida progresiva de neuronas productoras de dopamina en la Sustancia Negra del mesencéfalo. Esto genera alteraciones en el funcionamiento de los ganglios basales, estructuras esenciales para iniciar, coordinar y regular los movimientos voluntarios.</p>
 
-            <h2>Dificultades en el Desempeño Cotidiano</h2>
-            <p>Estas alteraciones le generan dificultades en actividades que requieren precisión y coordinación fina, tales como: abrochar botones, cortar alimentos, manipular cubiertos, escribir y manipular objetos pequeños.</p>
-            <p>Además, presenta dificultades para preparar sus alimentos, tardando más tiempo en realizar las tareas y requiriendo apoyo ocasional de su esposa.</p>
+    <h2>Manifestaciones Clínicas</h2>
+    <ul>
+        <li><strong>Temblor:</strong> Presencia de temblor de reposo en la mano derecha.</li>
+        <li><strong>Rigidez:</strong> Aumento del tono muscular.</li>
+        <li><strong>Bradicinesia:</strong> Lentitud generalizada en la ejecución de movimientos.</li>
+    </ul>
 
-            <h2>Participación Social y Ocio</h2>
-            <p>A nivel de participación, ha dejado de asistir a sus partidas semanales de ajedrez, una actividad significativa para él, debido a la pérdida de precisión en los movimientos de las manos, situación que le ha generado frustración y disminución de su participación social.</p>
+    <h2>Impacto en el Desempeño Cotidiano</h2>
+    <p>Estas alteraciones comprometen la precisión y coordinación fina, dificultando tareas como: abrochar botones, cortar alimentos, manipular cubiertos, escribir y manejar objetos pequeños. Adicionalmente, el tiempo necesario para preparar sus alimentos ha aumentado, requiriendo apoyo ocasional de su esposa.</p>
 
-            <h2>Áreas de Ocupación Afectadas</h2>
-            <ul>
-                <li><strong>Actividades Básicas de la Vida Diaria:</strong> Vestuario y alimentación.</li>
-                <li><strong>Actividades Instrumentales de la Vida Diaria:</strong> Preparación de alimentos.</li>
-                <li><strong>Ocio:</strong> Juego de ajedrez.</li>
-                <li><strong>Participación Social:</strong> Aislamiento progresivo.</li>
-                <li><strong>Independencia:</strong> Desempeño ocupacional general.</li>
-            </ul>
-        </section>
+    <h2>Perfil Ocupacional y Participación</h2>
+    <p>La pérdida de precisión en sus manos ha obligado a Carlos a abandonar sus partidas semanales de ajedrez, una actividad altamente significativa para él. Esta situación le ha generado sentimientos de frustración y una notable disminución en su participación social.</p>
+
+    <h2>Áreas de Ocupación Afectadas</h2>
+    <ul>
+        <li><strong>Actividades Básicas de la Vida Diaria:</strong> Vestuario y alimentación.</li>
+        <li><strong>Actividades Instrumentales de la Vida Diaria:</strong> Preparación de alimentos.</li>
+        <li><strong>Ocio:</strong> Juego de ajedrez.</li>
+        <li><strong>Participación social:</strong> Aislamiento progresivo.</li>
+        <li><strong>Desempeño ocupacional general:</strong> Disminución de la independencia.</li>
+    </ul>
+</section>
+
     </div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
