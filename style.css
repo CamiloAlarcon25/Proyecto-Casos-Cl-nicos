@@ -103,26 +103,26 @@ header p { color: var(--text-muted); font-size: 1.1rem; margin: 0; }
 
 @media (max-width: 768px) {
     .split-wrapper {
-        flex-direction: column !important; /* El !important fuerza el cambio */
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 20px;
+    }
+
+    .viewer-wrapper {
+        width: 100% !important;
+        height: 350px !important; /* Altura fija para asegurar que el modelo sea visible */
+        min-height: 350px;       /* Garantiza que nunca sea menor a esto */
+    }
+
+    .info-wrapper {
+        width: 100% !important;
         height: auto !important;
     }
 
-    .viewer-wrapper, .info-wrapper {
-        width: 100% !important;
-        height: 400px; /* Asegura altura visible */
-    }
-}
-
-    .info-wrapper {
-        width: 100%;
-        height: auto;
-    }
-
     .acv-carousel-container {
-        height: 250px;        /* Ajuste de altura para móvil si es necesario */
+        height: 250px; /* Ajuste cómodo para la imagen del carrusel en móvil */
     }
 }
-
 .viewer-wrapper { 
     flex: 4; 
     border: 1px solid var(--border-color); 
