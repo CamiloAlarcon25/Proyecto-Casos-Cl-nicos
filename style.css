@@ -127,7 +127,7 @@ model-viewer {
     }
 
     .acv-carousel-container {
-        height: 250px; /* Ajuste cómodo para la imagen del carrusel en móvil */
+        height: 300px; /* Ajuste cómodo para la imagen del carrusel en móvil */
     }
 }
 .viewer-wrapper { 
@@ -153,23 +153,22 @@ model-viewer { width: 100%; height: 100%; }
 }
 
 /* --- CARRUSEL MEJORADO (Aislado) --- */
-.acv-carousel-container { 
-    height: 320px; 
-    position: relative; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    background-color: #f8f9fa; 
-    border: 1px solid #e9ecef; 
-    border-radius: 8px; 
-    margin-bottom: 15px; 
+/* Ajusta esto en tu style.css */
+.acv-carousel-container {
+    height: 400px;      /* Aumentamos de 320px a 400px para que sea más alto */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;   /* Para que si la imagen es un poco más grande, no se desborde */
+    background-color: #f8f9fa;
 }
 
-.acv-img { 
-    max-width: 95%; 
-    max-height: 100%; 
-    object-fit: contain; 
-    display: block; 
+.acv-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Si prefieres que NO se corte nada, déjalo en contain */
+    /* object-fit: cover;  Si prefieres que llene todo el recuadro (se recortará un poco) */
 }
 
 .nav-btn { 
