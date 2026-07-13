@@ -1,4 +1,4 @@
-const imagenesACV = ['ACV_Isquemico1.png', 'ACV_Hemorragico.png', 'ACV_Mixto.png'];
+const imagenesACV = ['acv1.png', 'acv2.png', 'acv3.png'];
 let indiceImagen = 0;
 
 function cambiarImagen(direccion) {
