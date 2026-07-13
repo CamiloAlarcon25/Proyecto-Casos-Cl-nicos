@@ -155,6 +155,7 @@ model-viewer { width: 100%; height: 100%; }
 /* --- CARRUSEL MEJORADO (Aislado) --- */
 /* Ajusta esto en tu style.css */
 .acv-carousel-container {
+    position: relative:
     height: 400px;      /* Aumentamos de 320px a 400px para que sea más alto */
     width: 100%;
     display: flex;
