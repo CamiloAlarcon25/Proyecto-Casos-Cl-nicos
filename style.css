@@ -1,6 +1,10 @@
 :root {
     --primary-blue: #1a3c5e;
     --accent-blue: #0056b3;
+    /* Nueva tipografía */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    
     --bg-page: #eef2f5;
     --wrapper-bg: #ffffff;
     --text-main: #2d3436;
@@ -9,12 +13,22 @@
 }
 
 body { 
-    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    font-family: var(--font-body); 
     background-color: var(--bg-page); 
     color: var(--text-main); 
     margin: 0; 
     padding: 20px; 
+    line-height: 1.6; /* Aumentamos el interlineado para elegancia */
 }
+
+/* Aplicamos las fuentes a los elementos */
+h1, h2, h3 { 
+    font-family: var(--font-heading); 
+    color: var(--primary-blue); 
+}
+
+h1 { font-size: 2.8rem; }
+h2 { font-size: 1.8rem; }
 
 /* --- DISEÑO GENERAL Y HEADER --- */
 .main-wrapper { 
