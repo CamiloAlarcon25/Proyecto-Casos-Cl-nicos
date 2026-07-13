@@ -91,7 +91,7 @@ header p { color: var(--text-muted); font-size: 1.1rem; margin: 0; }
 /* --- DISEÑO DE PÁGINA CASOS CLÍNICOS --- */
 .btn-back { display: inline-block; margin-bottom: 25px; color: var(--accent-blue); text-decoration: none; font-weight: 600; }
 
-/* DISEÑO DE PÁGINA CASOS */
+/* DISEÑO DE PÁGINA CASOS 2*/
 .split-wrapper { 
     display: flex; 
     flex-direction: row; /* Por defecto, lado a lado en PC */
