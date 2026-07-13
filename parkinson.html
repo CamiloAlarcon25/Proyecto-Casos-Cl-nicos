@@ -17,24 +17,26 @@
             <h1>Caso Clínico: Enfermedad de Parkinson</h1>
             <p>Análisis de caso: Carlos, 68 años</p>
         </header>
+<div class="split-wrapper">
+    <!-- Visor 3D -->
+    <div class="viewer-wrapper">
+        <model-viewer src="cerebro-draco.glb" alt="Modelo 3D" auto-rotate camera-controls></model-viewer>
+    </div>
 
-        <div class="split-wrapper">
-            <div class="viewer-wrapper">
-                <model-viewer src="cerebro-draco.glb" alt="Modelo 3D" auto-rotate camera-controls></model-viewer>
+    <!-- Carrusel de Parkinson -->
+    <div class="info-wrapper">
+        <div class="info-card">
+            <h2 class="card-title">INFOGRAFÍA DE PARKINSON</h2>
+            <div class="acv-carousel-container">
+                <button class="nav-btn prev" onclick="cambiarImagenParkinson(-1)">❮</button>
+                <img id="parkinson-image" src="park1.png" alt="Infografía Parkinson" class="acv-img">
+                <button class="nav-btn next" onclick="cambiarImagenParkinson(1)">❯</button>
             </div>
+           <!-- <p style="text-align:center; font-size: 0.8rem; color: #636e72;">Navega por las infografías del caso</p> -->
+        </div>
+    </div>
+</div>
 
-           <!-- <div class="info-wrapper">
-                <div class="info-card">
-                   <!-- <h2 class="card-title">TIPOS DE ACV</h2> 
-                    <div class="acv-carousel-container">
-                        <button class="nav-btn prev" onclick="cambiarImagen(-1)">❮</button>
-                        <img id="acv-image" src="park1.png" alt="Tipo de ACV" class="park-img">
-                        <button class="nav-btn next" onclick="cambiarImagen(1)">❯</button>
-                    </div>
-                   <!-- <p style="text-align:center; font-size: 0.8rem; color: #636e72;">Haz clic en las flechas para ver otros tipos</p> 
-                </div>
-            </div> -->
-        </div> 
 <section class="info-section">
     <h2>Descripción del Caso</h2>
     <p><strong>Carlos, de 68 años</strong>, fue diagnosticado con Enfermedad de Parkinson hace dos años. Actualmente se encuentra en la <strong>Etapa II de la Escala de Hoehn y Yahr</strong>, lo que implica presencia de síntomas en ambos lados del cuerpo, aunque mantiene un grado importante de independencia funcional.</p>
