@@ -115,3 +115,11 @@ El repositorio está organizado con una arquitectura limpia de archivos web:
 ├── style.css           # Hoja de estilos globales, utilidades de Grid/Flex y Responsive UI
 ├── script.js           # Controlador Vanilla JS para carruseles e interactividad
 └── assets/             # Modelos tridimensionales (.glb) e infografías médicas
+```
+
+## 📂 Recursos del Repositorio
+
+* 🌐 **Plataforma Web Desplegada:** [Explorar Casos Clínicos en GitHub Pages](https://camiloalarcon25.github.io/Proyecto-Casos-Cl-nicos/)
+* 📄 **Estructura Principal:** [index.html](https://github.com/CamiloAlarcon25/Proyecto-Casos-Cl-nicos/blob/main/index.html)
+* 🎨 **Hojas de Estilo:** [style.css](https://github.com/CamiloAlarcon25/Proyecto-Casos-Cl-nicos/blob/main/style.css)
+* 📜 **Lógica JavaScript:** [script.js](https://github.com/CamiloAlarcon25/Proyecto-Casos-Cl-nicos/blob/main/script.js)
