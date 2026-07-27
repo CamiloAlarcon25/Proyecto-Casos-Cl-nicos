@@ -28,8 +28,6 @@
 
 ![Plataforma web](Pag_Principal.PNG)
 
-*(Asegúrate de ajustar los nombres de las imágenes en tu carpeta de assets)*
-
 ---
 
 ## 🎯 El Desafío de Diseño y Propósito
