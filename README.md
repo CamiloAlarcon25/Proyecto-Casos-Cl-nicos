@@ -30,11 +30,7 @@
   <tr>
     <td width="50%" align="center">
       <b>Página Principal (Listado de Casos)</b><br><br>
-      <img src="assets/Home_Preview.png" alt="Vista Principal de la Plataforma" width="100%"/>
-    </td>
-    <td width="50%" align="center">
-      <b>Visor 3D e Infografías (Detalle de Caso)</b><br><br>
-      <img src="assets/Caso_3D_Preview.png" alt="Visor 3D y Detalle Clínico" width="100%"/>
+      <img src="Pag_Principal.png" alt="Vista Principal de la Plataforma" width="100%"/>
     </td>
   </tr>
 </table>
