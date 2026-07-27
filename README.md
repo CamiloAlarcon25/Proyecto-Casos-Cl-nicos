@@ -26,14 +26,7 @@
 
 > *Experiencia de usuario optimizada para la exploración médica: navegación fluida por casos clínicos con visores 3D manipulables en tiempo real.*
 
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <b>Página Principal (Listado de Casos)</b><br><br>
-      <img src="Pag_Principal.png" alt="Vista Principal de la Plataforma" width="100%"/>
-    </td>
-  </tr>
-</table>
+![Plataforma web](Pag_Principal.PNG)
 
 *(Asegúrate de ajustar los nombres de las imágenes en tu carpeta de assets)*
 
@@ -88,11 +81,11 @@ El proyecto está desarrollado utilizando estándares web modernos para lograr m
   <tr>
     <td width="50%" align="center">
       <b>Caso Clínico: ACV (Accidente Cerebrovascular)</b><br><br>
-      <img src="assets/Caso_ACV.png" alt="Caso Clínico ACV" width="100%"/>
+      <img src="Pag_ACV.PNG" alt="Caso Clínico ACV" width="100%"/>
     </td>
     <td width="50%" align="center">
       <b>Caso Clínico: Enfermedad de Parkinson</b><br><br>
-      <img src="assets/Caso_Parkinson.png" alt="Caso Clínico Parkinson" width="100%"/>
+      <img src="Pag_Parkinson.PNG" alt="Caso Clínico Parkinson" width="100%"/>
     </td>
   </tr>
 </table>
