@@ -18,21 +18,31 @@
             <p>Análisis de caso: María, 74 años</p>
         </header>
 
-        <div class="split-wrapper">
-          <div class="viewer-wrapper">
-            <model-viewer src="alzheimer_brain.glb" alt="Modelo 3D de Cerebro con Alzheimer" auto-rotate camera-controls></model-viewer>
+<section class="comparacion-cerebros">
+    <h2>Comparativa 3D: Cerebro Normal vs. Alzheimer</h2>
+    
+    <div class="modelos-container">
+        <div class="modelo-box">
+            <h3>Cerebro Normal (Sano)</h3>
+            <model-viewer 
+                src="human_brain.glb" 
+                alt="Modelo 3D de un cerebro normal" 
+                auto-rotate 
+                camera-controls>
+            </model-viewer>
         </div>
 
-            <div class="info-wrapper">
-                <div class="info-card">
-                    <div class="acv-carousel-container">
-                        <button class="nav-btn prev" onclick="cambiarImagen(-1)">❮</button>
-                        <img id="acv-image" src="alzheimer1.png" alt="Infografía de Alzheimer" class="acv-img">
-                        <button class="nav-btn next" onclick="cambiarImagen(1)">❯</button>
-                    </div>
-                </div>
-            </div>
+        <div class="modelo-box">
+            <h3>Cerebro con Alzheimer</h3>
+            <model-viewer 
+                src="alzheimers_brain.glb" 
+                alt="Modelo 3D de un cerebro con Alzheimer" 
+                auto-rotate 
+                camera-controls>
+            </model-viewer>
         </div>
+    </div>
+</section>       
 
 <section class="info-section">
     <h2>Descripción del Caso</h2>
