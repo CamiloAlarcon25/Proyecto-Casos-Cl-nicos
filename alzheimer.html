@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso Clínico: Alzheimer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="index.html" class="btn-back">← Volver al Inicio</a>
+        <header>
+            <h1>Caso Clínico: Accidente Cerebrovascular Isquémico</h1>
+            <p>Análisis de caso: Alejandra, 54 años</p>
+        </header>
+
+        <div class="split-wrapper">
+          <div class="viewer-wrapper">
+        <model-viewer src="cerebro.glb" alt="Modelo 3D" auto-rotate camera-controls></model-viewer>
+    </div>
+
+            <div class="info-wrapper">
+                <div class="info-card">
+                   <!-- <h2 class="card-title">TIPOS DE ACV</h2> -->
+                    <div class="acv-carousel-container">
+                        <button class="nav-btn prev" onclick="cambiarImagen(-1)">❮</button>
+                        <img id="acv-image" src="acv1.png" alt="Tipo de ACV" class="acv-img">
+                        <button class="nav-btn next" onclick="cambiarImagen(1)">❯</button>
+                    </div>
+                   <!-- <p style="text-align:center; font-size: 0.8rem; color: #636e72;">Haz clic en las flechas para ver otros tipos</p> -->
+                </div>
+            </div>
+        </div>
+
+<section class="info-section">
+    <h2>Descripción del Caso</h2>
+    <p><strong>Alejandra, de 54 años</strong>, sufrió un Accidente Cerebrovascular (ACV) Isquémico en el hemisferio derecho hace cuatro meses. Actualmente vive con su esposo e hija y presenta un Rankin Modificado de 3 puntos, ya que requiere ayuda parcial para algunas actividades de la vida diaria, aunque mantiene cierto grado de independencia.</p>
+
+    <h2>Consecuencias Clínicas</h2>
+    <ul>
+        <li><strong>Hemiparesia izquierda:</strong> Debilidad y disminución de fuerza en el brazo y la pierna izquierda.</li>
+        <li><strong>Equilibrio:</strong> Alteraciones durante la marcha.</li>
+        <li><strong>Ejecución:</strong> Lentitud generalizada en la ejecución de las actividades.</li>
+        <li><strong>Coordinación:</strong> Disminución notable en la precisión de la mano izquierda.</li>
+    </ul>
+
+    <h2>Impacto en Actividades Cotidianas</h2>
+    <p>Estas dificultades han afectado su desempeño en tareas como: vestirse, abotonarse la ropa, cortar alimentos, peinarse, manipular objetos pequeños y preparar sus comidas.</p>
+    
+    <h2>Perfil Ocupacional y Afectación</h2>
+    <p>Antes del ACV, Alejandra trabajaba como secretaria y disfrutaba realizar tejido y bordado en su tiempo libre. Actualmente, la pérdida de fuerza y destreza le ha obligado a abandonar estas aficiones, generándole sentimientos de frustración y tristeza. Además, el miedo a sufrir caídas la ha llevado a evitar salir sola y a disminuir su participación en reuniones familiares y sociales.</p>
+
+    <h2>Áreas de Ocupación Afectadas</h2>
+    <ul>
+        <li><strong>Actividades Básicas de la Vida Diaria:</strong> Vestuario, alimentación e higiene.</li>
+        <li><strong>Actividades Instrumentales de la Vida Diaria:</strong> Preparación de alimentos y manejo del hogar.</li>
+        <li><strong>Ocio:</strong> Tejido y bordado.</li>
+        <li><strong>Participación social y Rol laboral.</strong></li>
+    </ul>
+</section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
