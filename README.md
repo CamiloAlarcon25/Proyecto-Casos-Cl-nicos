@@ -10,7 +10,7 @@
 ---
 
 ## Navegación Rápida
-[← Volver al Portafolio Principal](https://camiloalarcon25.github.io/Mi_Portafolio_v1/) \| 🌐 **[Acceder al Sitio Web en Vivo](https://camiloalarcon25.github.io/Proyecto-Casos-Cl-nicos/)**
+[← Volver al Portafolio Principal](https://camiloalarcon25.github.io/Mi_Portafolio_v1/) \| **[Acceder al Sitio Web en Vivo](https://camiloalarcon25.github.io/Proyecto-Casos-Cl-nicos/)**
 
 - [Vista General de la Plataforma](#vista-general-de-la-plataforma)
 - [El Desafío de Diseño y Propósito](#el-desafío-de-diseño-y-propósito)
