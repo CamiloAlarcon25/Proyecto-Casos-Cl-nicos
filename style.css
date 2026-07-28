@@ -138,3 +138,9 @@ model-viewer { width: 100%; height: 100%; display: block; }
     .acv-carousel-container { height: 300px; }
     .nav-btn { padding: 10px 12px; font-size: 1.2rem; }
 }
+
+/* Forzar renderizado y color en los visores 3D de comparación */
+.modelo-box model-viewer {
+    background-color: #f8f9fa; /* Fondo estético por si el modelo es transparente */
+    --poster-color: transparent;
+}
