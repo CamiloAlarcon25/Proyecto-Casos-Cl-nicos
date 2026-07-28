@@ -1,4 +1,4 @@
-# 🩺 Plataforma Web de Casos Clínicos Interactivos & Visualización 3D
+# Plataforma Web de Casos Clínicos Interactivos & Visualización 3D
 
 > **Plataforma web educativa para la salud y educación médica:** Interfaz inmersiva para el análisis de patologías complejas mediante renderizado de modelos anatómicos 3D interactivos, infografías secuenciales y diseño UI/UX responsive.
 
@@ -9,20 +9,20 @@
 
 ---
 
-## 📌 Navegación Rápida
+## Navegación Rápida
 [← Volver al Portafolio Principal](https://camiloalarcon25.github.io/Mi_Portafolio_v1/) \| 🌐 **[Acceder al Sitio Web en Vivo](https://camiloalarcon25.github.io/Proyecto-Casos-Cl-nicos/)**
 
-- [Vista General de la Plataforma](#-vista-general-de-la-plataforma)
-- [El Desafío de Diseño y Propósito](#-el-desafío-de-diseño-y-propósito)
+- [Vista General de la Plataforma](#vista-general-de-la-plataforma)
+- [El Desafío de Diseño y Propósito](#el-desafío-de-diseño-y-propósito)
 - [Arquitectura Frontend y Stack Tecnológico](#arquitectura)
-- [Características Clave y Experiencia de Usuario](#-características-clave-y-experiencia-de-usuario)
+- [Características Clave y Experiencia de Usuario](#características-clave-y-experiencia-de-usuario)
 - [Vistas Detalladas](#vistas)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Recursos del Repositorio](#-recursos-del-repositorio)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Recursos del Repositorio](#recursos-del-repositorio)
 
 ---
 
-## 📸 Vista General de la Plataforma
+## Vista General de la Plataforma
 
 > *Experiencia de usuario optimizada para la exploración médica: navegación fluida por casos clínicos con visores 3D manipulables en tiempo real.*
 
@@ -30,7 +30,7 @@
 
 ---
 
-## 🎯 El Desafío de Diseño y Propósito
+## El Desafío de Diseño y Propósito
 
 El aprendizaje de patologías complejas (como un Accidente Cerebrovascular o la enfermedad de Parkinson) suele verse limitado por material de estudio bidimensional estático.
 
@@ -41,7 +41,7 @@ El objetivo de este desarrollo fue **crear una herramienta EdTech/MedTech intera
 
 ---
 
-## <a name="arquitectura"></a>🛠️ Arquitectura Frontend y Stack Tecnológico
+## <a name="arquitectura"></a>Arquitectura Frontend y Stack Tecnológico
 
 El proyecto está desarrollado utilizando estándares web modernos para lograr máxima velocidad de carga y total independencia de frameworks pesados:
 
@@ -53,7 +53,7 @@ El proyecto está desarrollado utilizando estándares web modernos para lograr m
                                         └──( JavaScript Vanilla )──> [ Carruseles & Control DOM ]
 ```
 
-### 🧩 Especificación Técnica
+### Especificación Técnica
 
 | Capa / Herramienta | Tecnología | Función en la Plataforma |
 | :--- | :--- | :--- |
@@ -64,7 +64,7 @@ El proyecto está desarrollado utilizando estándares web modernos para lograr m
 
 ---
 
-## 📈 Características Clave y Experiencia de Usuario (UI/UX)
+## Características Clave y Experiencia de Usuario (UI/UX)
 
 * **Manipulación 3D en Tiempo Real:** Los modelos anatómicos permiten rotación 360°, zoom dinámico y reajuste de punto focal sin perder tasa de fotogramas.
 * **Carruseles de Infografías Asíncronos:** Sistema de diapositivas para revisar el diagnóstico, síntomas y tratamiento secuencialmente.
@@ -73,7 +73,7 @@ El proyecto está desarrollado utilizando estándares web modernos para lograr m
 
 ---
 
-## <a name="vistas"></a>🖼️ Vistas Detalladas
+## <a name="vistas"></a>Vistas Detalladas
 
 <table width="100%">
   <tr>
@@ -90,7 +90,7 @@ El proyecto está desarrollado utilizando estándares web modernos para lograr m
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 El repositorio está organizado con una arquitectura limpia de archivos web:
 
@@ -104,9 +104,9 @@ El repositorio está organizado con una arquitectura limpia de archivos web:
 └── assets/             # Modelos tridimensionales (.glb) e infografías médicas
 ```
 
-## 📂 Recursos del Repositorio
+## Recursos del Repositorio
 
-* 🌐 **Plataforma Web Desplegada:** [Explorar Casos Clínicos en GitHub Pages](https://camiloalarcon25.github.io/Proyecto-Casos-Cl-nicos/)
-* 📄 **Estructura Principal:** [index.html](https://github.com/CamiloAlarcon25/Proyecto-Casos-Cl-nicos/blob/main/index.html)
-* 🎨 **Hojas de Estilo:** [style.css](https://github.com/CamiloAlarcon25/Proyecto-Casos-Cl-nicos/blob/main/style.css)
-* 📜 **Lógica JavaScript:** [script.js](https://github.com/CamiloAlarcon25/Proyecto-Casos-Cl-nicos/blob/main/script.js)
+* **Plataforma Web Desplegada:** [Explorar Casos Clínicos en GitHub Pages](https://camiloalarcon25.github.io/Proyecto-Casos-Cl-nicos/)
+* **Estructura Principal:** [index.html](https://github.com/CamiloAlarcon25/Proyecto-Casos-Cl-nicos/blob/main/index.html)
+* **Hojas de Estilo:** [style.css](https://github.com/CamiloAlarcon25/Proyecto-Casos-Cl-nicos/blob/main/style.css)
+* **Lógica JavaScript:** [script.js](https://github.com/CamiloAlarcon25/Proyecto-Casos-Cl-nicos/blob/main/script.js)
