@@ -50,7 +50,7 @@ header p { color: var(--text-muted); font-size: 1.1rem; }
 .btn-card { display: inline-block; margin-top: 15px; padding: 10px 20px; border: 1px solid var(--accent-blue); color: var(--accent-blue); border-radius: 6px; font-weight: bold; transition: 0.3s; text-decoration: none; }
 .card:hover .btn-card { background-color: var(--accent-blue); color: #fff; }
 
-/* --- PÁGINA CASOS CLÍNICOS (Layout) --- */
+/* --- PÁGINA CASOS CLÍNICOS (Layout Estándar) --- */
 .split-wrapper { display: flex; width: 100%; height: 450px; gap: 20px; margin: 20px 0; }
 .viewer-wrapper { flex: 4; border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; background: #f8f9fa; }
 .info-wrapper { flex: 6; height: 100%; }
@@ -59,6 +59,45 @@ model-viewer { width: 100%; height: 100%; display: block; }
 .info-card { background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 6px solid var(--primary-blue); padding: 25px; height: 100%; box-sizing: border-box; }
 .info-section { margin-top: 40px; }
 .info-section h2 { border-bottom: 2px solid var(--border-color); padding-bottom: 10px; }
+
+/* --- NUEVO: COMPARATIVA 3D (Especial para Alzheimer) --- */
+.comparacion-cerebros {
+    margin: 30px 0;
+}
+
+.modelos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.modelo-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f9fa;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.modelo-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.modelo-box model-viewer {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
 
 /* --- CARRUSEL --- */
 .acv-carousel-container {
@@ -83,9 +122,19 @@ model-viewer { width: 100%; height: 100%; display: block; }
 .next { right: 10px; }
 
 /* --- RESPONSIVIDAD (MÓVIL) --- */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .split-wrapper { flex-direction: column !important; height: auto !important; }
     .viewer-wrapper, model-viewer { height: 350px !important; }
+    
+    /* Adaptación móvil para la comparativa de los dos cerebros 3D */
+    .modelos-container {
+        flex-direction: column !important;
+        gap: 15px;
+    }
+    .modelo-box model-viewer {
+        height: 35vh !important; /* Altura optimizada para que cargue perfecto sin forzar zoom */
+    }
+
     .acv-carousel-container { height: 300px; }
     .nav-btn { padding: 10px 12px; font-size: 1.2rem; }
 }
